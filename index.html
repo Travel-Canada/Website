@@ -1,92 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=h1, initial-scale=h" />
-    <!-- # Option #1: reference to an external website CSS file to reset style sheet   -->
-    <link
-      rel="stylesheet"
-      href="http://web.simmons.edu/~grovesd/comm244/notes/week4/reset.css"
-    />
-    <!-- # Option #2: reference to an stylesheet CSS file to reset style sheet   -->
-    <link rel="stylesheet" href="style_reset.css" />
-    <!-- # Option #3: write reset codes into style sheet, please see the CSS (styles.css) file   -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Document</title>
+</head>
 
-    <!-- css link to "styles.css" file-->
-    <link rel="stylesheet" href="styles.css" />
-    <title>Index</title>
-  </head>
+<body>
 
-  <body>
-    <div class="grid">
-      <div class="container">
-        <!-- ************Banner SECTION ******************-->
-        <!--Banner section with a Logo and words "Welcome to Travel Experts" -->
-        <div class="header-wrapper">
-          <div class = "header-text-wrapper">
-          <img src="img/logo.jpg" alt=""  >
-        
-          <h1 class="textitem">Welcome to Travel Experts</h1>
-          </div>
+<div class = "site-container">
+<!-- NAV BAR-->
+    <header>
+        <div class="navbar-container">
+            <div class="left-side">
+                <div class="nav-bar-link active-nav-bar-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-bar-link">
+                    <a href="vancouver.html">Vancouver</a>
+                </div>
+                <div class="nav-bar-link">
+                    <a href="calgary.html">Calgary</a>
+                </div>
+                <div class="nav-bar-link">
+                    <a href="toronto.html">Toronto</a>
+                </div>
+                <div class="nav-bar-link">
+                    <a href="montreal.html">Montreal</a>
+                </div>
+                <div class="nav-bar-link">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <h1>TRAVEL CANADA</h1>
+            </div>
+        </div>  
+    </header>
+        <div class="jumbotron-container">
+            <div class = "jumbotron-grid-container">
+                <div class="jumbotron-link-bar">
+                    <div class="jumbotron-links">
+                        <button class="button" onfocus="flightFocusFunction()" onblur="flightBlurFunction()">Flight</button>
+                        <button class="button" onfocus="hotelFocusFunction()" onblur="hotelBlurFunction()">Hotel</button>
+                        <button class="button" onfocus="rentalFocusFunction()" onblur="rentalBlurFunction()">Rental</button>
+                    </div>
+                </div>
+                <div class="jumbotron-link-desc-container"; style="background-image: url('pattern2.jpg');">
+                        <div id='flight' style="background-image:url('flight2.jpg'); background-position: center;">
+                            <h2 style="color: black;">Flight Bookings</h2>
+                        </div>
+                        <div id='hotel' style="background-image:url('hotel.jpg'); background-position: center;">
+                            <h2 style="color: white;">Hotel Bookings</h2>
+                        </div>
+                        <div id='rental' style="background-image:url('rental.jpg'); background-position: center;">
+                            <h2 style="color: white;">Car Rentals</h2>
+                        </div>
+                </div>               
+            </div>
         </div>
-        <!-- **************MAIN SECTION ***************-->
-        <!-- 3 pictures in the middle with short discriptions   -->
-        <!-- use HTML5 tages <section>, <artical> <nav>,<footer>-->
-        <section class="gridContainer-main">
-          <article class="gridContainer-main-img">
-            <img src="img/pix3.jpg" alt="" />
-            <div class="gridContainer-main-text">
-              <h6>
-                Cuba is a country comprising the island of Cuba, as well as Isla
-                de la Juventud and several minor archipelagos.
-              </h6>
+
+        <div class = "grid-container1">
+            <div class = "grid-item1">Vancouver</div>
+            <div class = "grid-item2"></div>
+            <div class = "grid-item3"></div>
+            <div class = "grid-item4"></div>
+        </div>
+        <div class = "grid-container2">
+            <div class = "grid-item5"></div>
+            <div class = "grid-item6"></div>
+            <div class = "grid-item7"></div>
+            <div class = "grid-item8">Calgary</div>
+        </div>
+        <div class = "grid-container3">
+            <div class = "grid-item9">Toronto</div>
+            <div class = "grid-item10"></div>
+            <div class = "grid-item11"></div>
+            <div class = "grid-item12"></div>
+        </div>
+        <div class = "grid-container4">
+            <div class = "grid-item13"></div>
+            <div class = "grid-item14"></div>
+            <div class = "grid-item15">Montreal</div>
+            <div class = "grid-item16"></div>
+        </div>
+    <!-- MAIN BODY CONTAINER-->
+        
+
+
+    <!-- LINKS-->
+
+    <!-- FOOTER-->
+        <div class="footer-container">
+                <h3>FOOTER</h3>
             </div>
-          </article>
+        
 
-          <article class="gridContainer-main-img">
-            <img src="img/pix2.jpg" alt="" />
-            <div class="gridContainer-main-text">
-              <h6>
-                Jamaica, island country of the West Indies. It is the third
-                largest island in the Caribbean Sea, after Cuba and Hispaniola.
-              </h6>
-            </div>
-          </article>
-
-          <article class="gridContainer-main-img">
-            <img src="img/pix1.jpg" alt="" />
-            <div class="gridContainer-main-text">
-              <h6>
-                Argentina, country of South America that covers most of the
-                southern portion of the continent and has Buenos Aires as its
-                capital..
-              </h6>
-            </div>
-          </article>
-        </section>
-
-        <!-- *******NAVAGATION SECTION ***************-->
-        <!-- navgation section  with Contact and Register button    -->
-        <nav class="nav-wrapper">
-          <a href="contact.html" target="_blank">
-            <img src="img/contact.jpg" alt="" />
-            <h6>Contact</h6>
-          </a>
-
-          <a href="register.html" target="_blank">
-            <img src="img/register.jpg" alt="" />
-            <h6>Register</h6></a
-          >
-        </nav>
-
-        <!-- ****************FOOTER SECTION *************-->
-        <!-- footer for Copyright  "&Copy" /contact/address information -->
-        <footer class="ftr-wrapper">
-          &copy;2021 Amazing Vacations Inc. - Member of the Calgary Travel
-          Group. All rights reserved. Alberta. Reg. #99999, Quebec Licensee #
-          88888.
-        </footer>
-      </div>
-    </div>
-  </body>
+</div>
+<script src="index.js"></script> 
+</body>
 </html>

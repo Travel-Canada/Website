@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
 <body>
 
 <div class = "site-container">
-<!-- NAV BAR-->
+
+    <!-- #################################  NAV BAR ################################# -->
+
     <header>
         <div class="navbar-container">
             <div class="left-side">
@@ -36,10 +41,13 @@
             </div>
 
             <div class="right-side">
-                <h1>TRAVEL CANADA</h1>
+                <h1>TRAVEL <span>CANADA</span></h1>
             </div>
         </div>  
     </header>
+
+        <!-- ############################### JUMBOTRON ################################# -->
+
         <div class="jumbotron-container">
             <div class = "jumbotron-grid-container">
                 <div class="jumbotron-link-bar">
@@ -49,19 +57,21 @@
                         <button class="button" onfocus="rentalFocusFunction()" onblur="rentalBlurFunction()">Rental</button>
                     </div>
                 </div>
-                <div class="jumbotron-link-desc-container"; style="background-image: url('pattern2.jpg');">
-                        <div id='flight' style="background-image:url('flight2.jpg'); background-position: center;">
+                <div class="jumbotron-link-desc-container"; style="background-image: url('images/pattern4.jpg')">
+                        <div id='flight' style="background-image:url('images/flight2.jpg'); background-position: center;">
                             <h2 style="color: black;">Flight Bookings</h2>
                         </div>
-                        <div id='hotel' style="background-image:url('hotel.jpg'); background-position: center;">
+                        <div id='hotel' style="background-image:url('images/hotel.jpg'); background-position: center;">
                             <h2 style="color: white;">Hotel Bookings</h2>
                         </div>
-                        <div id='rental' style="background-image:url('rental.jpg'); background-position: center;">
+                        <div id='rental' style="background-image:url('images/rental.jpg'); background-position: center;">
                             <h2 style="color: white;">Car Rentals</h2>
                         </div>
                 </div>               
             </div>
         </div>
+
+        <!-- #################################  BODY-GRID ################################# -->
 
         <div class = "grid-container1">
             <div class = "grid-item1">Vancouver</div>
@@ -87,16 +97,25 @@
             <div class = "grid-item15">Montreal</div>
             <div class = "grid-item16"></div>
         </div>
-    <!-- MAIN BODY CONTAINER-->
-        
 
+    <!-- #################################  FOOTER ################################# -->
 
-    <!-- LINKS-->
-
-    <!-- FOOTER-->
         <div class="footer-container">
-                <h3>FOOTER</h3>
+            <div class="footer11">
+                <div class="gridcontainer-footer-navbar">
+                    <div class="gridcontainer-footer-navbar-leftside">
+                        <div class="gridcontainer-footer-navbar-leftside-links"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></div>
+                        <div class="gridcontainer-footer-navbar-leftside-links"><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></div>
+                        <div class="gridcontainer-footer-navbar-leftside-links"><a href="#" class="google"><i class="fa fa-google"></i></a></div>
+                        <div class="gridcontainer-footer-navbar-leftside-links"><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></div>
+                        <div class="gridcontainer-footer-navbar-leftside-links"><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></div>
+                    </div>
+                    <div class="gridcontainer-footer-navbar-rightside">
+                        <h1>TRAVEL <span>CANADA</span> </h1>
+                    </div>
+                </div>  
             </div>
+        </div>
         
 
 </div>

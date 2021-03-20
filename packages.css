@@ -1,0 +1,349 @@
+/* <--****************** TEXT STYLES ****************** --> */
+
+*body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  font-size: 50px;
+  color: black;
+}
+
+h1 span {
+  color: white;
+  font-size: 50px;
+}
+
+a{
+color: black;
+}
+
+/* <--****************** THE GRID LAYOUT ****************** --> */
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 0.2fr 5rem 15rem 15rem 15rem 15rem 5rem 15rem 15rem 15rem 15rem 5rem 15rem 15rem 15rem 15rem 5rem 15rem 15rem 15rem 15rem 0.2fr;
+  grid-gap: 1.25rem;
+  padding: 40px 80px;
+  grid-template-areas:
+    "header1 "
+  "card2 "
+  "card3 "
+  "card4 "
+  "card5 "
+  "card6 "
+  "card7 "
+  "card8"
+  "card9"
+  "card10"
+  "card11"
+  "card12 "
+  "card13 "
+  "card14" 
+  "card15" 
+  "card16"
+  "card17" 
+  "card18" 
+  "card19" 
+  "card20 "
+  "card21 "
+    "footer22 ";
+}
+
+/* <--****************** HEADER NAVBAR ****************** --> */
+
+.gridcontainer-header-navbar {
+  display: grid;
+  grid-row-gap: 0px;
+  grid-template-columns: auto auto;
+  background: #ff0000;
+  padding: 0px 0px;
+  text-align: right;
+  width: 100%;
+  height: 100%;
+}
+
+.gridcontainer-header-navbar-leftside {
+  display: flex;
+}
+
+.gridcontainer-header-navbar-leftside-link {
+  margin: 30px 0px 0px 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.gridcontainer-header-navbar-leftside-link a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.gridcontainer-header-navbar-leftside-link a:hover {
+  color: black;
+  text-decoration: underline solid black 1px;
+}
+
+.active-gridcontainer-header-navbar-leftside-link a {
+  color: black !important;
+}
+
+.gridcontainer-header-navbar-rightside {
+  padding: 0px 10px 0px 0px;
+  display: flex;
+  justify-content: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* <-- ************ CARDS ******************--> */
+
+.gridcontainer-card-images{
+  width: 30%;
+  height: inherit;
+  object-fit: cover;
+  border-right: black solid;
+}
+
+.gridcontainer-card-descriptions{
+  width: 60%;
+  height: inherit;
+  padding: 20px;
+  font-family: Roboto, "Arial", Helvetica, sans-serif;
+}
+
+.gridcontainer-card-costs{
+  width: 15%;
+  height: inherit;
+  font-family: Roboto, "Arial", Helvetica, sans-serif;
+  text-align: center;
+
+  border-left: black solid;
+  
+}
+
+.gridcontainer-card-sectionHeading{
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: Roboto, "Arial", Helvetica, sans-serif;
+}
+
+button{
+  color: black;
+  background-color:  #ff0000;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: Roboto, "Arial", Helvetica, sans-serif;
+ 
+  
+}
+/* <-- ************ FOOTER-NAVBAR ******************--> */
+
+.gridcontainer-footer-navbar {
+  display: grid;
+  grid-row-gap: 0px;
+  grid-template-columns: auto auto;
+  background: #ff0000;
+  padding: 0px 0px;
+  text-align: right;
+  width: 100%;
+  height: 100%;
+}
+.gridcontainer-footer-navbar-leftside {
+  display: flex;
+  padding: 30px;
+  margin: 10px;
+  left: 10px;
+}
+.gridcontainer-footer-navbar-leftside-links {
+  margin: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.gridcontainer-footer-navbar-leftside-links a:hover {
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+.gridcontainer-footer-navbar-rightside {
+  padding: 0px 10px 0px 0px;
+  justify-content: right;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.facebook {
+  color: white;
+}
+.twitter {
+  color: white;
+}
+.google {
+  color: white;
+}
+.linkedin {
+  color: white;
+}
+.youtube {
+  color: white;
+}
+
+/* <--****************** SET GRID AREAS ****************** --> */
+
+.header1 {
+  grid-area: header1;
+  background-color: black;
+  padding: 10px 0px;
+}
+
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card3;
+}
+
+.card4 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card4;
+}
+
+.card5 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card5;
+}
+
+.card6 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card6;
+}
+.card7 {
+  grid-area: card7;
+}
+
+.card8 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card8;
+}
+
+.card9 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card9;
+}
+
+.card10 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card10;
+}
+.card11 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card11;
+}
+.card12 {
+  grid-area: card12;
+}
+
+.card13 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card13;
+}
+
+.card14 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card14;
+}
+
+.card15 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card15;
+}
+
+.card16 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card16;
+}
+
+.card17 {
+  grid-area: card17;
+}
+
+.card18 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card18;
+}
+
+.card19 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card19;
+
+}
+.card20 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card20;
+}
+.card21 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid black;
+  grid-area: card21;
+}
+
+.footer22 {
+  grid-area: footer22;
+  background-color: black;
+  padding: 10px 0px;
+}
+
+/* <--****************** MEDIA QUERIES ****************** --> */
+
+

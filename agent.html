@@ -47,29 +47,37 @@
 
         <div class="jumbotron-container">
             <div class = "jumbotron-grid-container">
-                <div class="jumbotron-form">
-                    <form id="myform" action="">
-                        <h2>Agent Login</h2>
-                        <div class="userName">
-                            <label for="userName">Username:</label>
-                            <input type="string" id="username"
-                                onfocus="usernameFocusFunction()" onblur="usernameBlurFunction()" required
-                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                                <!-- -->
-                        </div>
-                        <div class="passWord">
-                            <label for="passWord">Password  :</label>
-                            <input type="password" id="pwd" name="pwd"
-                                onfocus="passwordFocusFunction()" onblur="passwordBlurFunction()" required
-                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-                                <!-- Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters-->
-                                <input id="submit" type="submit">
-                                <input id="reset" type="reset">
-                        </div>
-                    </form>
-                </div>
+                <form class="card3">
+                    <h2 style="color: white; background-color: darkslategrey; font-family: Arial, Helvetica, sans-serif; font-size: 30px;">Agent Login</h2>
+                    <label for="userName"></label>
+                    <input type="string" name="username" placeholder="Username" padding: 2px;>
+                    <label for="passWord"></label>
+                    <input type="password" id="pwd" name="pwd" placeholder="Password">
+                    <input id="submit" type="submit">
+                </form>
             </div>
         </div>
+
+        <!-- <form class="card3">
+            <h2>Agent Login</h2>
+            <div class="userName">
+                <label for="userName">Username:</label>
+                <input type="string" id="username"
+                    onfocus="usernameFocusFunction()" onblur="usernameBlurFunction()" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            
+            </div>
+            <div class="passWord">
+                <label for="passWord">Password  :</label>
+                <input type="password" id="pwd" name="pwd"
+                    onfocus="passwordFocusFunction()" onblur="passwordBlurFunction()" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    <input id="submit" type="submit">
+                    <input id="reset" type="reset">
+            </div>
+        </form> -->
+
+        
 
     <!-- #################################  FOOTER ################################# -->
 

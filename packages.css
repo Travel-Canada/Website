@@ -104,16 +104,21 @@ color: black;
   width: 30%;
   height: inherit;
   object-fit: cover;
-  border-right: black solid;
+
   
 }
-
+.gridcontainer-card-images:hover{
+  transform: scale(1.20);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px black;
+}
 .gridcontainer-card-descriptions{
   width: 60%;
   height: inherit;
   padding: 20px;
   font-family: Roboto, "Arial", Helvetica, sans-serif;
   box-sizing: border-box;
+  border-left: black solid;
 }
 
 .gridcontainer-card-costs{

@@ -18,6 +18,7 @@ h1 span {
 
 a{
 color: black;
+
 }
 
 /* <--****************** THE GRID LAYOUT ****************** --> */
@@ -25,34 +26,15 @@ color: black;
 .gridcontainer {
   display: grid;
   grid-template-columns: 1fr ;
-  grid-template-rows: 0.2fr 5rem 15rem 15rem 15rem 15rem 5rem 15rem 15rem 15rem 15rem 5rem 15rem 15rem 15rem 15rem 5rem 15rem 15rem 15rem 15rem 0.2fr;
-  grid-gap: 1.20rem;
+  grid-template-rows: 0.2fr 40rem  0.2fr;
+  grid-gap: 1.25rem;
+ 
 
   grid-template-areas:
     "header1 "
-  "card2 "
-  "card3 "
-  "card4 "
-  "card5 "
-  "card6 "
-  "card7 "
-  "card8"
-  "card9"
-  "card10"
-  "card11"
-  "card12 "
-  "card13 "
-  "card14" 
-  "card15" 
-  "card16"
-  "card17" 
-  "card18" 
-  "card19" 
-  "card20 "
-  "card21 "
-    "footer22 ";
+    "card2 "
+    "footer14 ";
 }
-
 /* <--****************** HEADER NAVBAR ****************** --> */
 
 .gridcontainer-header-navbar {
@@ -60,8 +42,8 @@ color: black;
   grid-row-gap: 0px;
   grid-template-columns: auto auto;
   background: #ff0000;
-  
   text-align: right;
+  padding: 10px;
   width: 100%;
   height: 100%;
   padding: 15px;
@@ -104,53 +86,54 @@ color: black;
 
 /* <-- ************ CARDS ******************--> */
 
-.gridcontainer-card-images{
-  width: 30%;
-  height: inherit;
+.gridcontainer-card-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gridcontainer-card-image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 3px;
+}
 
-  
+.gridcontainer-card-image:hover img {
+  opacity: 50%;
+  transition-timing-function: ease-in;
+  transition: opacity 0.75s ease-in-out;
+  filter: drop-shadow(4px 3px 4px rgb(104, 104, 104));
 }
-.gridcontainer-card-images:hover{
-  transform: scale(1.20);
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px black;
-}
-.gridcontainer-card-descriptions{
-  width: 60%;
-  height: inherit;
-  padding: 20px;
-  font-family: Roboto, "Arial", Helvetica, sans-serif;
+
+.gridcontainer-card-image-description {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 60px;
+  transition-timing-function: ease-in;
   box-sizing: border-box;
-  border-left: black solid;
+  transition: opacity 0.75s ease-in-out;
 }
 
-.gridcontainer-card-costs{
-  width: 15%;
-  height: inherit;
+
+
+.gridcontainer-card-image-description-title {
+  margin-top: 20px;
   font-family: Roboto, "Arial", Helvetica, sans-serif;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-  border-left: black solid;
-  
-}
-
-.gridcontainer-card-sectionHeading{
-  font-size: 2rem;
+  font-size: 3vw;
   font-weight: 500;
-  font-family: Roboto, "Arial", Helvetica, sans-serif;
 }
 
-button{
-  color: black;
-  background-color:  #ff0000;
-  font-size: 1.1rem;
-  font-weight: 500;
+.gridcontainer-card-image-description-tagline {
   font-family: Roboto, "Arial", Helvetica, sans-serif;
- 
-  
+  font-size: 1.5vw;
+  font-weight: 300;
+  font-style: italic;
 }
+
 /* <-- ************ FOOTER-NAVBAR ******************--> */
 
 .gridcontainer-footer-navbar {
@@ -162,6 +145,7 @@ button{
   text-align: right;
   width: 100%;
   height: 100%;
+
 }
 .gridcontainer-footer-navbar-leftside {
   display: flex;
@@ -203,178 +187,77 @@ button{
 }
 
 /* <--****************** SET GRID AREAS ****************** --> */
-
 .header1 {
   grid-area: header1;
   background-color: black;
   padding: 10px 0px;
 }
-
 .card2 {
   grid-area: card2;
 }
-
 .card3 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
   grid-area: card3;
-  box-sizing: border-box;
 }
-
 .card4 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
   grid-area: card4;
-  box-sizing: border-box;
 }
-
 .card5 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
   grid-area: card5;
-  box-sizing: border-box;
 }
-
 .card6 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
   grid-area: card6;
-  box-sizing: border-box;
 }
 .card7 {
   grid-area: card7;
-  box-sizing: border-box;
 }
-
 .card8 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
   grid-area: card8;
-  box-sizing: border-box;
 }
-
 .card9 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
   grid-area: card9;
-  box-sizing: border-box;
 }
-
 .card10 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
   grid-area: card10;
-  box-sizing: border-box;
 }
 .card11 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
   grid-area: card11;
-  box-sizing: border-box;
 }
 .card12 {
   grid-area: card12;
-  box-sizing: border-box;
 }
-
 .card13 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
   grid-area: card13;
-  box-sizing: border-box;
 }
 
-.card14 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
-  grid-area: card14;
-  box-sizing: border-box;
-}
-
-.card15 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
-  grid-area: card15;
-  box-sizing: border-box;
-}
-
-.card16 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
-  grid-area: card16;
-  box-sizing: border-box;
-}
-
-.card17 {
-  grid-area: card17;
-  box-sizing: border-box;
-}
-
-.card18 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
-  grid-area: card18;
-  box-sizing: border-box;
-}
-
-.card19 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
-  grid-area: card19;
-  box-sizing: border-box;
-
-}
-.card20 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
-  grid-area: card20;
-  box-sizing: border-box;
-}
-.card21 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border: solid black;
-  grid-area: card21;
-  box-sizing: border-box;
-}
-
-.footer22 {
-  grid-area: footer22;
+.footer14 {
+  grid-area: footer14;
   background-color: black;
   padding: 10px 0px;
 }
 
 /* <--****************** MEDIA QUERIES ****************** --> */
 
-
+@media only screen and (max-width: 650px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr 1f 1f 1f 1f 1f 1f 1f 1f 0.4f;
+    grid-template-areas:
+      "header1 "
+      "card2 "
+      "card3 "
+      "card4 "
+      "card5 "
+      "card6 "
+      "card7 "
+      "card8"
+      "card9"
+      "card10"
+      "footer14";
+  }
+  .gridcontainer-header-navbar {
+    display: flex;
+  }
+  .left-side {
+    display: flex;
+  }
+}

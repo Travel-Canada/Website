@@ -1,0 +1,266 @@
+/* <--****************** TEXT STYLES ****************** --> */
+
+*body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  font-size: 50px;
+  color: black;
+}
+
+h1 span {
+  color: white;
+  font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* <--****************** THE GRID LAYOUT ****************** --> */
+
+.gridcontainer {
+  display: grid;
+  background-image: url("images/hotel.jpg");
+  background-repeat: no repeat;
+  background-size: cover;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr;
+  grid-gap: 1.25rem;
+
+  grid-template-areas:
+    "header1 header1 header1 header1 header1"
+    "card2 card3 card3 card3 card4"
+    "card2 card3 card3 card3 card4"
+    "card2 card3 card3 card3 card4"
+    "footer11 footer11 footer11 footer11 footer11";
+}
+/* <--****************** HEADER NAVBAR ****************** --> */
+
+.gridcontainer-header-navbar {
+  display: grid;
+  grid-row-gap: 0px;
+  grid-template-columns: auto auto;
+  background: #ff0000;
+  padding: 0px 0px;
+  text-align: right;
+  width: 100%;
+  height: 100%;
+}
+
+.gridcontainer-header-navbar-leftside {
+  display: flex;
+}
+
+.gridcontainer-header-navbar-leftside-link {
+  margin: 30px 0px 0px 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.gridcontainer-header-navbar-leftside-link a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.gridcontainer-header-navbar-leftside-link a:hover {
+  color: black;
+  text-decoration: underline solid black 1px;
+}
+
+.active-gridcontainer-header-navbar-leftside-link a {
+  color: black !important;
+}
+
+.gridcontainer-header-navbar-rightside {
+  padding: 0px 10px 0px 0px;
+  display: flex;
+  justify-content: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* <-- ************ CARDS ******************--> */
+
+input[type="text"],
+select {
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="tel"],
+select {
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="email"],
+select {
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+form {
+  background-color: rgb(17, 34, 34);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+input {
+  display: block;
+  margin: 0px 0 10px 0;
+  border-radius: 5px;
+  font-size: 17px;
+  width: 100%;
+}
+button {
+  margin-top: 10px;
+}
+/* <-- ************ FOOTER-NAVBAR ******************--> */
+
+.gridcontainer-footer-navbar {
+  display: grid;
+  grid-row-gap: 0px;
+  grid-template-columns: auto auto;
+  background: #ff0000;
+  padding: 0px 0px;
+  text-align: right;
+  width: 100%;
+  height: 100%;
+}
+.gridcontainer-footer-navbar-leftside {
+  display: flex;
+  padding: 30px;
+  margin: 10px;
+  left: 10px;
+}
+.gridcontainer-footer-navbar-leftside-links {
+  margin: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.gridcontainer-footer-navbar-leftside-links a:hover {
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+.gridcontainer-footer-navbar-rightside {
+  padding: 0px 10px 0px 0px;
+  justify-content: right;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.facebook {
+  color: white;
+}
+.twitter {
+  color: white;
+}
+.google {
+  color: white;
+}
+.linkedin {
+  color: white;
+}
+.youtube {
+  color: white;
+}
+
+/* <--****************** SET GRID AREAS ****************** --> */
+
+.header1 {
+  grid-area: header1;
+  background-color: black;
+  padding: 10px 0px;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+  border-radius: 10px;
+  }
+}
+.card4 {
+  grid-area: card4;
+}
+/* .card5 {
+  grid-area: card5;
+}
+.card6 {
+  grid-area: card6;
+}
+.card7 {
+  grid-area: card7;
+}
+.card8 {
+  grid-area: card8;
+}
+.card9 {
+  grid-area: card9;
+}
+.card10 {
+  grid-area: card10;
+} */
+.footer11 {
+  grid-area: footer11;
+  background-color: black;
+  padding: 10px 0px;
+}
+
+/* <--****************** MEDIA QUERIES ****************** --> */
+
+@media only screen and (max-width: 650px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr 1f 1f 0.4f;
+    grid-template-areas:
+      "header1 "
+      "card2 "
+      "card3 "
+      "card4 "
+      /* "card5 "
+      "card6 "
+      "card7 "
+      "card8"
+      "card9"
+      "card10" */
+      "footer11";
+  }
+  .gridcontainer-header-navbar {
+    display: flex;
+  }
+  .left-side {
+    display: flex;
+  }
+}

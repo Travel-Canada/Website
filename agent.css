@@ -84,7 +84,7 @@ h3 {
   background-image: url("images/Moraine-Lake.jpg");
   background-repeat: none;
   background-size: cover;
-  height: 600px;
+  height: 760px;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
@@ -96,6 +96,7 @@ h3 {
 }
 .card3 {
   grid-area: card3;
+  border-radius: 10px;
 }
 .card4 {
   grid-area: card4;
@@ -124,8 +125,10 @@ form {
 input {
   display: block;
   margin: 10px;
+  border-radius: 5px;
   font-size: 17px;
   width: 370px;
+  padding: 7px;
 }
 
 #submit {
